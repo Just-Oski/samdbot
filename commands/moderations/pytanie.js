@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js');
 const dotenv = require("dotenv").config("./.env")
 
 module.exports = {
-	name: 'decline',
+	name: 'pytanie',
 	async execute(client, message, args){
         if(!message.member.roles.cache.some(r => r.name === "👨‍⚕️ | Weryfikator")) return message.reply('Nie możesz tego użyć!')
 		message.delete();
