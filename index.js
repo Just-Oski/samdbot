@@ -1,7 +1,7 @@
 const fs = require('fs');
 const discord = require('discord.js');
 const { Client, Intents } = require('discord.js');
-const client = new discord.Client({ disableMentions: 'everyone', intents: [ 
+const client = new discord.Client({ disableMentions: 'everyone', intents: [
     Intents.GUILDS,
     Intents.GUILD_MEMBERS,
     Intents.GUILD_BANS,
