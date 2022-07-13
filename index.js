@@ -1,13 +1,11 @@
 const fs = require('fs');
 const discord = require('discord.js');
+const { Client, Intents } = require('discord.js');
 const client = new discord.Client({ disableMentions: 'everyone', intents: [
-    discord.Intents.GUILD_MEMBERS, 
-    discord.Intents.GUILD_MESSAGES, 
-    discord.Intents.DIRECT_MESSAGES,
-    discord.Intents.GUILD_MESSAGE_TYPING] });
-
-const { MessageEmbed } = require(`discord.js`)
-
+    Intents.GUILD_MEMBERS, 
+    Intents.GUILD_MESSAGES, 
+    Intents.DIRECT_MESSAGES,
+    Intents.GUILD_MESSAGE_TYPING] });
 
 client.config = require('./bot');
 client.commands = new discord.Collection();
